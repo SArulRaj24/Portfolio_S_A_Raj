@@ -10,7 +10,7 @@ const Topcontent = () => {
             <p>I driven student with a strong passion for learning, innovation, and practical application of theoretical knowledge. 
               Eager to contribute to cutting-edge projects and collaborate in dynamic environments.</p>
             {/* <p>About me   </p> */}
-            <a href="www.resume.com">
+            <a href="https://drive.google.com/file/d/1N5KD2AwCn6ohiEEdGh7pLCMfaOJ53WqN/view?usp=sharing">
                 <button className='topcontent__cvbtn'>Download CV</button>
             </a>
             <Link to='project' smooth={true} duration={500} offset={-100}>
