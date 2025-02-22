@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.skillcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0px;
+}
+.skillcontainer__value{
+    color: white;
+    flex:0.6;
+    text-align: left;
+    min-width: 500px;
+    margin-bottom: 20px;
+}
+.skillcontainer__value > h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.skillcontainer__skill >h5{
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    font-size: 15px;
+    font-style: italic;
+
+}
+
+.skillcontainer__slider__value1>div>.MuiLinearProgress-barColorPrimary{
+    background-color:red;
+}
+
+.skillcontainer__slider__value2>div>.MuiLinearProgress-barColorPrimary{
+    background-color: red;   
+}
+
+.skillcontainer__slider__value3>div>.MuiLinearProgress-barColorPrimary{
+    background-color: red;   
+}
+
+.skillcontainer__slider__value4>div>.MuiLinearProgress-barColorPrimary{
+    background-color: red;   
+}
+
+.skillcontainer__slider__value5>div>.MuiLinearProgress-barColorPrimary{
+    background-color: red;   
+}
+
+.skillcontainer__slider__value6>div>.MuiLinearProgress-barColorPrimary{
+    background-color: red;   
+}
+
+.skillcontainer__slider__value7>div>.MuiLinearProgress-barColorPrimary{
+    background-color: red;   
+}
+.skillcontainer__slider__value8>div>.MuiLinearProgress-barColorPrimary{
+    background-color: red;   
+}
+

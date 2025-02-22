@@ -1,0 +1,40 @@
+.educational__deatil{
+    color: white;
+    
+}
+
+.educational__detail>.expcontainer__value>h2{
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+.educational__detail>.expcontainer__clg{
+    text-align: left;
+    margin-left: 500px;
+    position:relative;
+    line-height: 1.5;
+    font-family: 'Times New Roman';
+    padding-bottom: 50px;
+}
+
+.educational__detail>.expcontainer__cert>h2{
+    text-align: center;
+    position: relative;
+    /* margin-left: 500px; */
+    padding-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.educational__detail>.expcontainer__cert>h3{
+    text-align: left;
+    position: relative;
+    margin-left: 500px;
+    padding-bottom: 50px;
+    font-size: medium;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+

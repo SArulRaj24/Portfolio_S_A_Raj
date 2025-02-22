@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.topcontent{
+    color: white;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    position: relative;
+
+}
+.topcontent__container{
+    position: absolute;
+    top: 200px;
+    right: 150px;
+    letter-spacing: 1px;
+    margin-left: 700px;
+}
+
+.topcontent__container > p{
+    text-align: center;
+    padding-left: 2px;
+    padding-top: 8px;
+    margin-top: 2px;
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    /* margin-left: 700px; */
+    justify-content: left;
+    /* text-wrap:initial; */
+}
+
+.topcontent__container >a > button{
+        border-radius: 2px;
+        margin-bottom: 30px;
+        margin-left: 5px;
+        text-align: left;
+        padding:20;
+        border: none;
+        outline: none;
+}
+
+.topcontent__container > h1{
+    font-size: 46px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.topcontent__cvbtn{
+    color: white;
+    background-color:lightcoral;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:14px;
+    border-radius: 10px;
+    margin-top:20px;
+    padding: 10px 10px;
+    font-weight: 300;
+    cursor:pointer;
+}
+
+.topcontent__cvbtn:hover{
+    color:black;
+    background-color:lavender;
+    font-weight: 300;
+
+}
+
+.topcontent__workbtn{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid !important;
+    margin-right: 20px;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius:10px;
+
+}
+.topcontent__workbtn:hover{
+    color:red;
+    background-color:black;
+    font-weight: 300;
+
+}
+/* .topcontent .topcontent__container p{
+    display: flex;
+    position: relative;
+    text-align:right;
+    margin-left: 100px;
+} */

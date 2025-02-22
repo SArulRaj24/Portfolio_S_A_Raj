@@ -1,0 +1,8 @@
+.topcontainer{
+    background-image: url(../../assets/pic-VyqcHZBP.jpg);
+    height:150vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
