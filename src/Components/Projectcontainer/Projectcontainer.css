@@ -1,147 +1,148 @@
-*{color: white;}
-
-.projectcontainer__details{
-    color: white;
-    margin-top:50px;
-    text-align: center;
-    /* font-size: 20px; */
-    padding-bottom: 5px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 300;
-}
-.projectcontainer__details > h2{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    padding-bottom: 10px;
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.projectcontainer__details>p{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.projectcontainer__pro{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-left: 100px; 
-    margin-top: 50px;  
-    margin-bottom: 50px; 
-    margin-left: 200px;
-    padding: 20px;
-    /* padding: 20px 20px; */
-}
-.projectcontainer__pro>.projectcontainer__pro1>h4{
-    padding-bottom: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 22pxpx;
-
-}
-.projectcontainer__pro>.projectcontainer__pro2>h4{
-    padding-bottom: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 22pxpx;
-}
-.projectcontainer__pro>.projectcontainer__pro3>h4{
-    padding-bottom: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 22pxpx;
-}
-.projectcontainer__pro>.projectcontainer__pro4>h4{
-    padding-bottom: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 22pxpx;
-}
-.projectcontainer__pro>.projectcontainer__pro5>h4{
-    padding-bottom: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 22pxpx;
-}
-.projectcontainer__pro>.projectcontainer__pro1>p{
-    /* padding-bottom: 15px; */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22pxpx;
-}
-.projectcontainer__pro>.projectcontainer__pro2>p{
-    /* padding-bottom: 15px; */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22pxpx;
-}
-.projectcontainer__pro>.projectcontainer__pro3>p{
-    /* padding-bottom: 15px; */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22pxpx;
-}
-.projectcontainer__pro>.projectcontainer__pro4>p{
-    /* padding-bottom: 15px; */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22pxpx;
-}
-.projectcontainer__pro>.projectcontainer__pro5>p{
-    /* padding-bottom: 15px; */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22pxpx;
+h2{
+  /* background-color: lavender; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.projectcontainer__pro>.projectcontainer__pro1{
-    /* border: solid;
-    border-radius: 2px;
-    border-color: aquamarine; */
-    height: 100px;
-    padding: 20px ;
-    color: white;
-    line-height: 1.25;
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: 200;
-}
-.projectcontainer__pro>.projectcontainer__pro2{
-    /* border: solid;
-    border-radius: 2px;
-    border-color: aquamarine; */
-    height: 100px;
-    padding: 20px ;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: 200;
-}
-.projectcontainer__pro>.projectcontainer__pro3{
-    /* border: solid;
-    border-radius: 2px;
-    border-color: aquamarine; */
-    height: 100px;
-    line-height: 1.25;
-    padding: 20px ;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: 200;
-}
-.projectcontainer__pro>.projectcontainer__pro4{
-    /* border: solid;
-    border-radius: 2px;
-    border-color: aquamarine; */
-    height: 100px;
-    padding: 20px ;
-    line-height: 1.25;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: 200;
-}
-.projectcontainer__pro>.projectcontainer__pro5{
-    /* border: solid;
-    border-radius: 2px;
-    border-color: aquamarine; */
-    height: 100px;
-    padding: 20px ;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: 200;
+/* Main card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
+/* Individual Card */
+.project-card {
+  width: calc(33.33% - 3rem);
+  max-width: 400px;
+  height: 300px;
+  perspective: 1500px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Shared front/back styles */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
+}
+
+/* Front side of card */
+.card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1   ;
+}
+
+.card-title-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.card-title {
+  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+  background: rgba(255, 255, 255, 0.08); /* Subtle translucent */
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+
+/* Back side of card */
+.card-back {
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.card-back-overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.card-back-content {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive Cards */
+@media (max-width: 1024px) {
+  .project-card {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: 100%;
+  }
+}

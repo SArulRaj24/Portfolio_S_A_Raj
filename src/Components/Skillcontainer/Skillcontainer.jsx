@@ -61,6 +61,13 @@ function Skillcontainer(){
                     <LinearProgress variant='determinate' value={75}/>
                 </div>
             </div>
+            <div className='skillcontainer__skill'>
+                <h5>Cloud</h5>
+                <div className='skillcontainer__slider__value7'>
+                    <LinearProgress variant='determinate' value={50}/>
+                </div>
+            </div>
+
         </div>
     </Element>
   )
