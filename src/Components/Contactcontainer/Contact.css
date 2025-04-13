@@ -65,6 +65,7 @@
 /* Input & Textarea */
 .form-input {
   padding: 0.625rem 0.75rem;
+  height:50px;
   font-size: 0.875rem;
   border: 1px solid #d1d5db;
   border-radius: 0.5rem;

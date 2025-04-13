@@ -1,49 +1,49 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 import './Projectcontainer.css';
-import pic1 from '../../assets/pic-1.png';
-import pic2 from '../../assets/pic-2.png';
-import pic3 from '../../assets/pic-3.png';
-import pic4 from '../../assets/pic-4.png';
+import dehaze from '../../assets/dehaze.png';
+import bot from '../../assets/pic-4.png';
+import sar from '../../assets/sar.png';
+import cnn from '../../assets/cnn.png';
+import glucose from '../../assets/glu.jpg';
 
 const projects = [
   {
     title: "Image Classification using CNN",
     description:
       "Designed and trained a CNN for image classification using data augmentation and hyperparameter tuning.",
-    image:
-      "https://images.pexels.com/photos/31133725/pexels-photo-31133725/free-photo-of-streetlamp-amidst-blooming-cherry-blossoms-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    image:cnn,
   },
   {
     title: "Dehazing with VAEs",
     description:
       "Used variational autoencoders to remove haze and improve image clarity in varying conditions.",
-    image:pic1,
+    image:dehaze,
   },
   {
     title: "Enterprise Chatbot (RAG + LLaMA)",
     description:
       "Built an FAQ chatbot using Retrieval-Augmented Generation and LLaMA LLM for enterprise content support.",
-    image: pic4,
+    image: bot,
   },
   {
     title: "SAR Image Colorization",
     description:
       "Colorized SAR (Synthetic Aperture Radar) images and enhanced details using VAEs and deep learning.",
-    image: "https://images.pexels.com/photos/31133725/pexels-photo-31133725/free-photo-of-streetlamp-amidst-blooming-cherry-blossoms-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    image: sar,
   },
   {
-    title: "Project Placeholder 5",
+    title: "Glucose Level Indicator",
     description:
-      "You can add another project here later with a title and description.",
-    image: "https://images.pexels.com/photos/31133725/pexels-photo-31133725/free-photo-of-streetlamp-amidst-blooming-cherry-blossoms-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "Created a Glucose level Indicator using ardunio and gsm Module which track the glucose level in the bottle and send alert message once the Glucose level reached certain limit. ",
+    image: glucose,
   },
-  {
-    title: "Project Placeholder 6",
-    description:
-      "You can update this card with a future academic or personal project.",
-    image: "https://images.pexels.com/photos/31133725/pexels-photo-31133725/free-photo-of-streetlamp-amidst-blooming-cherry-blossoms-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load", 
-  },
+  // {
+  //   title: "Project Placeholder 6",
+  //   description:
+  //     "You can update this card with a future academic or personal project.",
+  //   image: "https://images.pexels.com/photos/31133725/pexels-photo-31133725/free-photo-of-streetlamp-amidst-blooming-cherry-blossoms-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load", 
+  // },
 ];
 
 const Projectcontainer = () => {

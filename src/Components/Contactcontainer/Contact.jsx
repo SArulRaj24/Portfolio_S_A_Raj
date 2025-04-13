@@ -34,9 +34,9 @@ const Contact = () => {
     <Element className='contact' id='contact'>
     <section className="contact-section">
       <div className="contact-container">
-        <h2 className="contact-title">Contact Us</h2>
+        <h2 className="contact-title">Contact Me</h2>
         <p className="contact-subtitle">
-          Got a technical issue? Want to send feedback about a beta feature? Let us know.
+          Get a touch with me for any queries or just to say hi!
         </p>
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
@@ -55,13 +55,13 @@ const Contact = () => {
         </form>
 
          <div className="contact-links">
-          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/SArulRaj24" target="_blank" rel="noopener noreferrer">
             <GitHubIcon/>
           </a>
-          <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/s_a_raj_forever/" target="_blank" rel="noopener noreferrer">
           < InstagramIcon/>
           </a>
-          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/arulraj-s-b-tech/" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon/>
           </a>
         </div>

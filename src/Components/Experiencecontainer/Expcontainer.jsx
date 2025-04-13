@@ -4,32 +4,33 @@ import { Element } from 'react-scroll';
 
 const timelineData = [
   {
-    year: '2017',
-    description: "Completed Bachelor's degree in Computer Science with a focus on software development."
+    year: '2022-2026',
+    description: "Pursuing a Bachelor's degree in Artificial Intelligence and Machine Learning at R.M.D Enginerring College"
   },
   {
-    year: '2016',
-    description: 'Interned at XYZ Tech as a Front-End Developer using React and Tailwind.'
+    year: '2021-2022',
+    description: 'Completed HSE at E.R.K Hr.Sec School with 88.67%.'
   },
   {
-    year: '2015',
-    description: 'Built several academic projects involving JavaScript, Node.js, and REST APIs.'
+    year: '2019-2020',
+    description: 'Completed SSLC at E.R.K Hr.Sec School with 97.60%.'
   },
   {
-    year: '2014',
-    description: 'Started exploring web development, HTML, CSS, and JavaScript.'
+    year: 'Feb-Mar 2025',
+    description: 'Motion Cut – Web Development Intern.'
   },
   {
-    year: '2013',
-    description: 'Graduated High School with a keen interest in technology and programming.'
+    year: 'June-July 2024',
+    description: 'Trios Technology – Deep Learning Intern.'
   },
   {
-    year: '2013',
-    description: 'Graduated High School with a keen interest in technology and programming.'
-  },{
-    year: '2013',
-    description: 'Graduated High School with a keen interest in technology and programming.'
-  }
+    year: 'Jan-Feb 2024',
+    description: 'CodSoft – Python Intern.'
+  },
+  {
+    year: 'Jan-Feb 2024',
+    description: 'Ybi Foundation – Data Science and Machine Learning'
+  }  
 ];
 
 const Expcontainer = () => {

@@ -116,13 +116,14 @@ h2{
   color: white;
   border-radius: 0.75rem;
   overflow: hidden;
+  
 }
 
 .card-back-overlay {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0,0,0, 0.5);
   z-index: 0;
 }
 
@@ -132,6 +133,8 @@ h2{
   padding: 1rem;
   font-size: 16px;
   line-height: 1.5;
+  border-radius: 2rem;
+  
 }
 
 /* Responsive Cards */

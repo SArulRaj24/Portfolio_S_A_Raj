@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 200px 0px;
+    margin: 380px 0px;
 }
 .skillcontainer__value{
     color: white;
@@ -27,37 +27,17 @@
     font-style: italic;
 
 }
+h3{
+  text-align: center;
+  padding-top: 15px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 .skillcontainer__slider__value1>div>.MuiLinearProgress-barColorPrimary{
-    background-color:red;
+    background-color: red;
 }
 
-.skillcontainer__slider__value2>div>.MuiLinearProgress-barColorPrimary{
-    background-color: red;   
-}
-
-.skillcontainer__slider__value3>div>.MuiLinearProgress-barColorPrimary{
-    background-color: red;   
-}
-
-.skillcontainer__slider__value4>div>.MuiLinearProgress-barColorPrimary{
-    background-color: red;   
-}
-
-.skillcontainer__slider__value5>div>.MuiLinearProgress-barColorPrimary{
-    background-color: red;   
-}
-
-.skillcontainer__slider__value6>div>.MuiLinearProgress-barColorPrimary{
-    background-color: red;   
-}
-
-.skillcontainer__slider__value7>div>.MuiLinearProgress-barColorPrimary{
-    background-color: red;   
-}
-.skillcontainer__slider__value8>div>.MuiLinearProgress-barColorPrimary{
-    background-color: red;   
-}
 
 /* ===== Responsive Styling ===== */
 @media (max-width: 1024px) {
