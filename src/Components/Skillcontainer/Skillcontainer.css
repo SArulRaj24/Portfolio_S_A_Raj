@@ -42,7 +42,7 @@ h3{
 /* ===== Responsive Styling ===== */
 @media (max-width: 1024px) {
     .skillcontainer {
-      margin: 100px 0;
+      margin: 700px 0;
       flex-direction: column;
       align-items: center;
     }

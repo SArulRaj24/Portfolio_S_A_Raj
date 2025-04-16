@@ -8,7 +8,7 @@ const Topcontent = () => {
         <div className="profile-image-wrapper">
           </div>
         <div className='topcontent__container'>
-            <h1>Mr.Arulraj</h1>
+            <h1>S Arulraj</h1>
             <p>AI driven student with a strong passion for learning, innovation, and practical application of theoretical knowledge. 
               Eager to contribute to cutting-edge projects and collaborate in dynamic environments.</p>
             {/* <p>About me   </p> */}

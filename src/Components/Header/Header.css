@@ -8,6 +8,7 @@
     background-color: black;
     color: white;
     display: flex;
+    font-family:"Times new Roman";
     align-items: center;
     top: 0;
     position: sticky;
