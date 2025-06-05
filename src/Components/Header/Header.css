@@ -1,87 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-*{
-    margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    background-color: black;
-    color: white;
-    display: flex;
-    font-family:"Times new Roman";
-    align-items: center;
-    top: 0;
-    position: sticky;
-    z-index: 200;
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: #000;
+  color: #fff;
 }
 
-.header__left{
-    flex: 0.4;
-}
-.header__left > h1{
-    text-align: center;
-    padding: 20px 0px;
-    letter-spacing: 1px;
-    font-family: "ubuntu" sans-serif;
-}
-
-.header__right{
-    display: flex;
-    justify-content: space-evenly;
-    flex: 0.6;
-    align-items: center;
+.header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.header__right > a >h3{
-    font-size: 18;
-    cursor: pointer;
-    transition: transform 200ms ease-in-out;
-    padding: 20px 5px;
+.header__left {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 260px; /* Prevent jittering on change */
 }
-.header__right >a >h3:hover{
-    transform: scale(1.09);
-    background-color:lightblue;
-    color: black;
-    padding:  5px 20px ;
-    border-radius: 2px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    cursor: pointer;
+
+.header__left h1 {
+  display: inline-block;
+  min-width: 220px; /* Adjust based on longest title */
+  text-align: center;
+  padding: 0.5rem 0;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  margin-left: 0px;
+  font-size: 1.8rem;
+  color: #00c6ff;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.header__right {
+  flex: 0.6;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__right a h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.header__right a h3:hover {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transform: scale(1.05);
 }
 
 /* ===== Responsive Styles ===== */
-
 @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .header__left,
-    .header__right {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .header__right {
-      flex-direction: column;
-      padding-bottom: 10px;
-    }
-  
-    .header__right > a > h3 {
-      padding: 10px;
-      font-size: 16px;
-    }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
   }
-  
-  @media (max-width: 480px) {
-    .header__left > h1 {
-      font-size: 20px;
-      padding: 15px 0;
-    }
-  
-    .header__right > a > h3 {
-      font-size: 14px;
-      padding: 8px;
-    }
+
+  .header__left,
+  .header__right {
+    width: 100%;
+    text-align: center;
   }
+
+  .header__right {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .header__right a h3 {
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__left h1 {
+    font-size: 1.5rem;
+  }
+
+  .blinking-cursor {
+    font-size: 1.5rem;
+  }
+
+  .header__right a h3 {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+}

@@ -1,5 +1,4 @@
 * {
-  color: white;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,144 +7,120 @@
 body {
   background-color: #121212;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
-h2{
-  /* background-color: lavender; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+h2 {
+  text-align: center;
   padding: 20px;
 }
 
-
-/* Main card container */
+/* Main container for cards */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 8rem;
   padding: 2rem;
 }
 
 /* Individual Card */
-.project-card {
-  width: calc(33.33% - 3rem);
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures consistent height */
   max-width: 400px;
-  height: 300px;
-  perspective: 1500px;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.6s ease;
-}
-
-.project-card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Shared front/back styles */
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 0.75rem;
-  overflow: hidden;
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
-}
-
-/* Front side of card */
-.card-front {
   background-color: #fff;
-  color: black;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(177, 154, 154, 0.05);
+  overflow: hidden;
 }
 
 .card-img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
-  z-index: 1   ;
 }
 
-.card-title-overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5rem;
+.card-content {
+  flex-grow: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to bottom */
+  padding: 1.5rem; /* Increased padding for better spacing */
+  background-color: black; 
+  color: white;
+  min-height: 200px; /* Forces height if needed to match cards */
 }
 
 
 .card-title {
-  padding: 0.75rem 1.5rem;
-  font-size: 16px;
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
   color: white;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-
-  background: rgba(255, 255, 255, 0.08); /* Subtle translucent */
-  border-radius: 10px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 2;
 }
 
+.card-description {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: white;
+  padding: 2px;
+  font-style: oblique;
+}
 
-/* Back side of card */
-.card-back {
-  background-size: cover;
-  background-position: center;
-  transform: rotateY(180deg);
-  position: relative;
-  display: flex;
+.card-link {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: blue;
   color: white;
-  border-radius: 0.75rem;
-  overflow: hidden;
-  
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.card-back-overlay {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0,0,0, 0.5);
-  z-index: 0;
+.card-link:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card-back-content {
-  position: relative;
-  z-index: 1;
-  padding: 1rem;
-  font-size: 16px;
-  line-height: 1.5;
-  border-radius: 2rem;
-  
-}
 
-/* Responsive Cards */
+
+/* Responsive */
 @media (max-width: 1024px) {
-  .project-card {
-    width: calc(50% - 2rem);
+  .card {
+    width: 100%;
   }
 }
 
 @media (max-width: 600px) {
-  .project-card {
-    width: 100%;
+  .card-container {
+    flex-direction: column; /* Stack cards vertically in mobile view */
+    align-items: center; /* Center cards */
+  }
+  .card {
+    width: 100%; /* Full width for mobile view */
+    height: auto; /* Adjust height for content */
+  }
+  .card-img {
+    height: 150px; /* Adjust image height for mobile */
+  }
+  .card-content {
+    padding: 1rem; /* Adjust padding for mobile */
+  }
+  .card-title {
+    font-size: 1.25rem; /* Adjust font size for mobile */
+  }
+  .card-description {
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+  .card-link {
+    font-size: 0.8rem; /* Adjust font size for mobile */
+    padding: 0.5rem 0.75rem; /* Adjust padding for mobile */
   }
 }
