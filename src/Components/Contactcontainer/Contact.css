@@ -93,7 +93,7 @@
 }
 
 .submit-button:hover {
-  background-color: #1d4ed8;
+  background-color:blue;
 }
 /* logo */
 .contact-links {
@@ -102,14 +102,16 @@
   gap: 1.5rem;
   margin-top: 2rem;
 }
-
-.contact-icon {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease;
-  filter: invert(1); /* Makes logos white for dark background */
+.contact-links a {
+  text-decoration: none;
+  color: white; 
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
 }
 
-.contact-icon:hover {
-  transform: scale(1.1);
+
+.contact-links a:hover {
+  transform: scale(1.5);
 }

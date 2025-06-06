@@ -53,17 +53,17 @@
 }
 
 .topcontent__name {
-  font-family: 'open-sans', sans-serif;
-  font-size: 2.8rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #ffffff 0%, #d1d1d1 100%);
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  font-size: 3rem; /* Slightly larger for emphasis */
+  font-weight: 600; /* Bold for strong visual impact */
+  background: linear-gradient(90deg, #99d9ea 0%, #0072ff 100%); /* Vibrant gradient matching portfolio theme */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   margin-bottom: 1.5rem;
   letter-spacing: 2px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
 .topcontent__desc {

@@ -3,6 +3,7 @@ import { Element } from 'react-scroll';
 import './Contact.css';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/SendSharp';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -72,6 +73,9 @@ const Contact = () => {
             </a>
             <a href="https://www.linkedin.com/in/arulraj-s-b-tech/" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon />
+            </a>
+            <a href="mailto:sarulrajoffcial@gmail.com" target="_blank" rel="noopener noreferrer">
+              <EmailIcon />
             </a>
           </div>
         </div>

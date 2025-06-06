@@ -32,7 +32,7 @@ const Header = () => {
     <header className="header">
       <div className="header__left">
         <h1>{displayedTitle}</h1>
-        <span className="blinking-cursor">|</span>
+        {/* <span className="blinking-cursor">|</span> */}
       </div>
 
       <nav className="header__right">

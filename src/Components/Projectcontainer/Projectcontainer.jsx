@@ -7,6 +7,7 @@ import bot from '../../assets/pic-4.png';
 import sar from '../../assets/sar.png';
 import cnn from '../../assets/cnn.png';
 import glucose from '../../assets/glu.jpg';
+import port from '../../assets/port.png';
 
 const projects = [
   {
@@ -42,8 +43,15 @@ const projects = [
     description:
       "Created a Glucose level Indicator using Arduino and GSM Module which tracks the glucose level in the bottle and sends an alert message once the glucose level reaches a certain limit.",
     image: glucose,
-    link: "https://github.com/yourusername/glucose-level-indicator",
+    link: "https://github.com/SArulRaj24/Glucose_level_indicator",
   },
+  {
+    title: "Portfolio Website",
+    description:
+      "Developed a personal portfolio website to showcase my projects and skills using React.",
+    image:port,
+    link: "https://github.com/SArulRaj24/Portfolio_S_A_Raj",
+  }
 ];
 
 const Projectcontainer = () => {
