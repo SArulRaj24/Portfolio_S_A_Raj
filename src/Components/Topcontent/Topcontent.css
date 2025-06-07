@@ -56,7 +56,7 @@
   font-family: 'Poppins', sans-serif; /* Modern and clean font */
   font-size: 3rem; /* Slightly larger for emphasis */
   font-weight: 600; /* Bold for strong visual impact */
-  background: linear-gradient(90deg, #99d9ea 0%, #0072ff 100%); /* Vibrant gradient matching portfolio theme */
+  background: linear-gradient(90deg, #2e67eb 50%, #0072ff 100%); /* Vibrant gradient matching portfolio theme */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
