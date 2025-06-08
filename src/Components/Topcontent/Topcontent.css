@@ -31,7 +31,7 @@
 }
 
 .profile-image:hover {
-  transform: scale(1.05) rotate(-2deg);
+  transform: scale(5) rotate(-2deg);
   box-shadow: 0 12px 36px rgba(0, 123, 255, 0.22);
 }
 
@@ -53,10 +53,10 @@
 }
 
 .topcontent__name {
-  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Modern and clean font */
   font-size: 3rem; /* Slightly larger for emphasis */
-  font-weight: 600; /* Bold for strong visual impact */
-  background: linear-gradient(90deg, #2e67eb 50%, #0072ff 100%); /* Vibrant gradient matching portfolio theme */
+  font-weight: 100; /* Bold for strong visual impact */
+  background: linear-gradient(180deg, #2e67eb 0%, #0072ff 100%); /* Vibrant gradient matching portfolio theme */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

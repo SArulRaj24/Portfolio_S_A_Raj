@@ -9,6 +9,7 @@ function Skillcontainer(){
     <Element className='skillcontainer' id='skills'>
         <div className='skillcontainer__value'>
             <h2>Skillset</h2>
+            
             <div className='skillcontainer__skill'>
                 <h5>HTML</h5>
                 <div className='skillcontainer__slider__value1'>
@@ -28,6 +29,12 @@ function Skillcontainer(){
                 </div>
             </div>
             <div className='skillcontainer__skill'>
+                <h5>REACT JS</h5>
+                <div className='skillcontainer__slider__value1'>
+                    <LinearProgress variant='determinate' value={75}/>
+                </div>
+            </div>
+            <div className='skillcontainer__skill'>
                 <h5>C</h5>
                 <div className='skillcontainer__slider__value1'>
                     <LinearProgress variant='determinate' value={50}/>
@@ -40,15 +47,15 @@ function Skillcontainer(){
                 </div>
             </div>
             <div className='skillcontainer__skill'>
-                <h5>SQL</h5>
+                <h5>Python</h5>
                 <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={90}/>
+                    <LinearProgress variant='determinate' value={75}/>
                 </div>
             </div>
             <div className='skillcontainer__skill'>
-                <h5>REACT JS</h5>
+                <h5>SQL</h5>
                 <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={75}/>
+                    <LinearProgress variant='determinate' value={90}/>
                 </div>
             </div>
             <div className='skillcontainer__skill'>
@@ -58,7 +65,7 @@ function Skillcontainer(){
                 </div>
             </div>
             <div className='skillcontainer__skill'>
-                <h5>Cloud</h5>
+                <h5>Azure</h5>
                 <div className='skillcontainer__slider__value1'>
                     <LinearProgress variant='determinate' value={50}/>
                 </div>
