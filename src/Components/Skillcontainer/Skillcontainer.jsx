@@ -1,104 +1,73 @@
-import React from 'react';
-import './Skillcontainer.css';
-import { Element } from 'react-scroll';
-import LinearProgress from "@mui/material/LinearProgress";
+import React from "react";
+import "./Skillcontainer.css";
+import { Element } from "react-scroll";
 
+// Import your skill logos (place them inside /src/assets or /public)
+import htmlLogo from "../../assets/html.png";
+import cssLogo from "../../assets/css.png";
+import jsLogo from "../../assets/js.png";
+import reactLogo from "../../assets/react.png";
+import mongodb from "../../assets/db.png";
+import javaLogo from "../../assets/java.png";
+import pythonLogo from "../../assets/python.png";
+import sqlLogo from "../../assets/mysql.png";
+import gitLogo from "../../assets/git.png";
+import azureLogo from "../../assets/azure.jpg";
 
-function Skillcontainer(){
+import intellijLogo from "../../assets/ij.jpg";
+import colabLogo from "../../assets/colab.png";
+import pycharmLogo from "../../assets/pycharm.jpg";
+import vscodeLogo from "../../assets/vs.jpg";
+import postman from "../../assets/pman.png";
+
+function Skillcontainer() {
+  const skills = [
+    { name: "Java", logo: javaLogo },
+    { name: "Python", logo: pythonLogo },
+    { name: "HTML", logo: htmlLogo },
+    { name: "CSS", logo: cssLogo },
+    { name: "JavaScript", logo: jsLogo },
+    { name: "React JS", logo: reactLogo },
+    { name: "MongoDB", logo: mongodb },
+    { name: "MySQL", logo: sqlLogo },
+    { name: "Git & GitHub", logo: gitLogo },
+    { name: "Azure", logo: azureLogo },
+  ];
+
+  const ides = [
+    { name: "IntelliJ", logo: intellijLogo },
+    { name: "Google Colab", logo: colabLogo },
+    { name: "PyCharm", logo: pycharmLogo },
+    { name: "VS Code", logo: vscodeLogo },
+    { name: "Postman", logo: postman },
+    
+  ];
+
   return (
-    <Element className='skillcontainer' id='skills'>
-        <div className='skillcontainer__value'>
-            <h2>Skillset</h2>
-            
-            <div className='skillcontainer__skill'>
-                <h5>HTML</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={85}/>
-                </div>
+    <Element className="skillcontainer" id="skills">
+      <div className="skillcontainer__value">
+        <h2>Skillset</h2>
+        <div className="skill-grid">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill-card">
+              <img src={skill.logo} alt={skill.name} />
+              <p>{skill.name}</p>
             </div>
-            <div className='skillcontainer__skill'>
-                <h5>CSS</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={75}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>JAVASCRIPT</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={50}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>REACT JS</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={75}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>C</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={50}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>JAVA</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={60}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>Python</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={75}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>SQL</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={90}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>GIT & GITHUB</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={75}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>Azure</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={50}/>
-                </div>
-            </div>
-            <h3>IDE's</h3>
-            <div className='skillcontainer__skill'>
-                <h5>IntelliJ</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={80}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>Google Colab</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={90}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>Pycharm</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={85}/>
-                </div>
-            </div>
-            <div className='skillcontainer__skill'>
-                <h5>VS-Code</h5>
-                <div className='skillcontainer__slider__value1'>
-                    <LinearProgress variant='determinate' value={80}/>
-                </div>
-            </div>
-
+          ))}
         </div>
+
+        <h3>IDE's</h3>
+        <div className="skill-grid">
+          {ides.map((ide, index) => (
+            <div key={index} className="skill-card">
+              <img src={ide.logo} alt={ide.name} />
+              <p>{ide.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </Element>
-  )
+  );
 }
 
 export default Skillcontainer;
