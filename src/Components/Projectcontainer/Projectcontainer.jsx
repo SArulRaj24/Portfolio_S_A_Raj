@@ -8,6 +8,7 @@ import sar from '../../assets/sar.png';
 import cnn from '../../assets/cnn.png';
 import drug1 from '../../assets/drug (1).png';
 import port from '../../assets/port.png';
+import ecom from '../../assets/ecom.png';
 
 const projects = [
 
@@ -26,6 +27,14 @@ const projects = [
     image:port,
     link: "https://github.com/SArulRaj24/Portfolio_S_A_Raj",
   },
+  {
+    title: "E-Commerce Platform",
+    description:
+      "Built a full-stack e-commerce platform using Spring Boot backend and React.js frontend with features including product management, shopping cart.",
+    image:ecom,
+    link: "https://github.com/SArulRaj24/E_Com_SpringBoot",
+  },
+
    {
     title: "Enterprise Chatbot (RAG + LLaMA)",
     description:
