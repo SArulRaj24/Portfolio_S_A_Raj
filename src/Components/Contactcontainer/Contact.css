@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 150px 0 100px;
+  margin: 80px 0 ;
+
   color: #fff;
   padding: 0 1rem;
 }
@@ -12,17 +13,20 @@
 .contact-section {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
-  border-radius: 1rem;
-  padding: 2.5rem 2rem;
-  max-width: 650px;
+  border-radius: 1rem; /* smaller corner */
+  padding: 1rem 1rem; /* ✅ reduced padding */
+  max-width: 600px;       /* ✅ narrower container */
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  /* box-shadow: 0 6px 18px rgba(13, 17, 16, 0.55); slightly lighter shadow */
   animation: fadeIn 1s ease forwards;
   opacity: 0;
   transform: translateY(40px);
 }
 
+.contact-section:hover{
+    box-shadow: 0 6px 6px rgba(125, 112, 222, 0.55);
+}
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -53,7 +57,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .form-group {

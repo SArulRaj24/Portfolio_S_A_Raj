@@ -7,6 +7,41 @@ import EmailIcon from '@mui/icons-material/SendSharp';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  // ✅ Handle form input changes
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // ✅ Handle form submit (prevent redirect)
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // stop default redirect
+
+    try {
+      const response = await fetch("https://formspree.io/f/xldndabv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ email: '', subject: '', message: '' }); // ✅ Clear fields
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error submitting form. Try again later.");
+    }
+  };
 
   return (
     <Element className='contact' id='contact'>
@@ -17,20 +52,17 @@ const Contact = () => {
             Get in touch with me for any queries or just to say hi!
           </p>
 
-          <form
-            action="https://formspree.io/f/xldndabv" // 🔁 Replace with your actual Formspree form ID
-            method="POST"
-            className="contact-form"
-            onSubmit={() => setSubmitted(true)}
-          >
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="email" className="form-label">Your email</label>
               <input
                 type="email"
                 id="email"
-                name="email" // ✅ Formspree requires "email"
+                name="email"
                 className="form-input"
                 placeholder="name@example.com"
+                value={formData.email}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -43,6 +75,8 @@ const Contact = () => {
                 name="subject"
                 className="form-input"
                 placeholder="Let us know..."
+                value={formData.subject}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -55,15 +89,16 @@ const Contact = () => {
                 rows="6"
                 className="form-input"
                 placeholder="Leave a comment..."
+                value={formData.message}
+                onChange={handleChange}
                 required
               ></textarea>
             </div>
 
             <button type="submit" className="submit-button">Send message</button>
 
-            {/* ✅ Success message */}
             {submitted && (
-              <p className="success-message">Thanks! Your message has been sent.</p>
+              <p className="success-message">✅ Thanks! Your message has been sent.</p>
             )}
           </form>
 

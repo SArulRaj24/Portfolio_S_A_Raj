@@ -6,10 +6,33 @@ import dehaze from '../../assets/dehaze.png';
 import bot from '../../assets/pic-4.png';
 import sar from '../../assets/sar.png';
 import cnn from '../../assets/cnn.png';
-import glucose from '../../assets/glu.jpg';
+import drug1 from '../../assets/drug (1).png';
 import port from '../../assets/port.png';
 
 const projects = [
+
+   {
+    title: "Drug Forecasting",
+    description:
+      "Developed a time series forecasting model for pharmaceutical sales analysis using historical data patterns to predict future sales trends and optimize inventory management.",
+    image: drug1,
+    link: "https://github.com/SArulRaj24/DrugForecasting",
+  },
+
+   {
+    title: "Portfolio Website",
+    description:
+      "Developed a personal portfolio website to showcase my projects and skills using React.",
+    image:port,
+    link: "https://github.com/SArulRaj24/Portfolio_S_A_Raj",
+  },
+   {
+    title: "Enterprise Chatbot (RAG + LLaMA)",
+    description:
+      "Built an FAQ chatbot using Retrieval-Augmented Generation and LLaMA LLM for enterprise content support.",
+    image: bot,
+    link: "https://github.com/SArulRaj24/EP_BOT",
+  },
   {
     title: "Image Classification using CNN",
     description:
@@ -24,34 +47,16 @@ const projects = [
     image: dehaze,
     link: "https://colab.research.google.com/drive/1-hOVRp2Q7klg4ZMc3SFpedkQWvaga54W",
   },
-  {
-    title: "Enterprise Chatbot (RAG + LLaMA)",
-    description:
-      "Built an FAQ chatbot using Retrieval-Augmented Generation and LLaMA LLM for enterprise content support.",
-    image: bot,
-    link: "https://github.com/SArulRaj24/EP_BOT",
-  },
+ 
   {
     title: "SAR Image Colorization",
     description:
       "Colorized SAR (Synthetic Aperture Radar) images and enhanced details using VAEs and deep learning.",
     image: sar,
-    link: "https://github.com/SArulRaj24/SAR_image_colourization",
+    link: "https://github.com/SArulRaj24/DrugForecasting",
   },
-  {
-    title: "Glucose Level Indicator",
-    description:
-      "Created a Glucose level Indicator using Arduino and GSM Module which tracks the glucose level in the bottle and sends an alert message once the glucose level reaches a certain limit.",
-    image: glucose,
-    link: "https://github.com/SArulRaj24/Glucose_level_indicator",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "Developed a personal portfolio website to showcase my projects and skills using React.",
-    image:port,
-    link: "https://github.com/SArulRaj24/Portfolio_S_A_Raj",
-  }
+ 
+ 
 ];
 
 const Projectcontainer = () => {
