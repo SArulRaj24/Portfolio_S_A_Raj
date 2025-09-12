@@ -56,7 +56,7 @@ function Skillcontainer() {
           ))}
         </div>
 
-        <h3>IDE's</h3>
+        <h3>Tools</h3>
         <div className="skill-grid">
           {ides.map((ide, index) => (
             <div key={index} className="skill-card">
