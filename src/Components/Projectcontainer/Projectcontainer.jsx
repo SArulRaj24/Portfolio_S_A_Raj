@@ -9,6 +9,7 @@ import cnn from '../../assets/cnn.png';
 import drug1 from '../../assets/drug (1).png';
 import port from '../../assets/port.png';
 import ecom from '../../assets/ecom.png';
+import event from '../../assets/event.png';
 
 const projects = [
 
@@ -42,28 +43,35 @@ const projects = [
     image: bot,
     link: "https://github.com/SArulRaj24/EP_BOT",
   },
-  {
-    title: "Image Classification using CNN",
-    description:
-      "Designed and trained a CNN for image classification using data augmentation and hyperparameter tuning.",
-    image: cnn,
-    link: "https://colab.research.google.com/drive/1fOuIL2ztIivvS0NvSeaZ-InFY8QOnHpX#scrollTo=nJSbmvARlDjJ",
-  },
-  {
-    title: "Dehazing with VAEs",
-    description:
-      "Used variational autoencoders to remove haze and improve image clarity in varying conditions.",
-    image: dehaze,
-    link: "https://colab.research.google.com/drive/1-hOVRp2Q7klg4ZMc3SFpedkQWvaga54W",
-  },
+  // {
+  //   title: "Image Classification using CNN",
+  //   description:
+  //     "Designed and trained a CNN for image classification using data augmentation and hyperparameter tuning.",
+  //   image: cnn,
+  //   link: "https://colab.research.google.com/drive/1fOuIL2ztIivvS0NvSeaZ-InFY8QOnHpX#scrollTo=nJSbmvARlDjJ",
+  // },
+  // {
+  //   title: "Dehazing with VAEs",
+  //   description:
+  //     "Used variational autoencoders to remove haze and improve image clarity in varying conditions.",
+  //   image: dehaze,
+  //   link: "https://colab.research.google.com/drive/1-hOVRp2Q7klg4ZMc3SFpedkQWvaga54W",
+  // },
  
-  {
-    title: "SAR Image Colorization",
-    description:
-      "Colorized SAR (Synthetic Aperture Radar) images and enhanced details using VAEs and deep learning.",
-    image: sar,
-    link: "https://github.com/SArulRaj24/DrugForecasting",
-  },
+  // {
+  //   title: "SAR Image Colorization",
+  //   description:
+  //     "Colorized SAR (Synthetic Aperture Radar) images and enhanced details using VAEs and deep learning.",
+  //   image: sar,
+  //   link: "https://github.com/SArulRaj24/DrugForecasting",
+  // },
+
+    {
+      title: "Event Management and VolunteerHub",
+      description:"VolunteerHub streamlines community engagement. Organizers create, publish, and monitor events with real-time registration tracking and attendance management. Volunteers browse, register, and participate. Features include notifications, check-in verification, and analytics dashboards.",
+      image:event,
+      link:"https://github.com/SArulRaj24/Event_Management",
+    }
  
  
 ];
